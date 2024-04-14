@@ -3,13 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link ref="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment-with-locales.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock</title>
   </head>
   <body>
-    <h1>World Clock</h1>
+    <div class="container">
+      <h1>World Clock</h1>
+
+      <select name="" id="cities">
+        <option value="">Select a city</option>
+        <option value="America/Los_Angeles">Los Angeles</option>
+        <option value="America/New_York">New York</option>
+        <option value="Europe/London">London</option>
+        <option value="Europe/Paris">Paris</option>
+        <option value="Asia/Calcutta">Calcutta</option>
+        <option value="Asia/Bangkok">Bangkok</option>
+        <option value="Asia/Tokyo">Tokyo</option>
+        <option value="Australia/Sydney">Sydney</option>
+      </select>
+
+      <div class="city">
+        <h2>Miami</h2>
+        <div class="date">April 14th 2024</div>
+        <div class="time">1:48:15 AM</div>
+      </div>
+      <div class="city">
+        <h2>Miami</h2>
+        <div class="date">April 14th 2024</div>
+        <div class="time">1:48:15 AM</div>
+      </div>
+    </div>
+
     <footer>
       This project was coded by Estelle Mostowski and is on GitHub and hosted on
       Netlify.
