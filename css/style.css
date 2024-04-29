@@ -1,6 +1,6 @@
 body {
   background-color: #efecec;
-  margin: 100px;
+  margin: 0px auto;
 }
 
 .frame {
@@ -46,8 +46,8 @@ h1 {
 
 img {
   position: relative;
-  left: 880px;
-  bottom: -160px;
+  left: 970px;
+  bottom: -170px;
   width: 120px;
 }
 .city {
