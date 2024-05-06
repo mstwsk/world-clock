@@ -1,6 +1,6 @@
 body {
   background-color: #efecec;
-  margin: 0px auto;
+  margin: 100px auto;
 }
 
 .frame {
@@ -45,11 +45,13 @@ h1 {
 }
 
 img {
-  position: relative;
-  left: 970px;
-  bottom: -170px;
+  position: absolute;
+  overflow: hidden;
+  left: 1000px;
   width: 120px;
+  top: 125px;
 }
+
 .city {
   display: flex;
   justify-content: space-between;
