@@ -82,12 +82,12 @@ h2 {
   margin-left: 33px;
 }
 hr {
-  border-style: solid;
+  border-style: dashed;
   border-color: #fff773;
   margin: 15px;
   margin-inline-start: 50px;
   margin-inline-end: 50px;
-  border-width: 2px;
+  border-width: 1px;
 }
 
 footer {
