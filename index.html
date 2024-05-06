@@ -7,14 +7,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment-with-locales.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock</title>
-    <img src="src/Vault-Boy.png"
+    <img src="src/Vault-Boy.png" />
   </head>
   <body>
     <div class="frame">
       <div class="container">
         <h1>WORLD CLOCK</h1>
 
-        <select name="" id="cities">
+        <select name="" id="select-cities">
           <option value="">SELECT A CITY</option>
           <option value="America/Los_Angeles">LOS ANGELES</option>
           <option value="America/New_York">NEW YORK</option>
@@ -25,27 +25,27 @@
           <option value="Asia/Tokyo">TOKYO</option>
           <option value="Australia/Sydney">SYDNEY</option>
         </select>
-
-        <div class="city" id="los-angeles">
-          <div>
-            <h2>Los Angeles</h2>
-            <div class="date"></div>
+        <div id="data-cities">
+          <div class="city" id="los-angeles">
+            <div>
+              <h2>Los Angeles</h2>
+              <div class="date"></div>
+            </div>
+            <div class="time"></div>
           </div>
-          <div class="time"></div>
-        </div>
 
-        <hr />
+          <hr />
 
-        <div class="city" id="london">
-          <div>
-            <h2>London</h2>
-            <div class="date"></div>
+          <div class="city" id="london">
+            <div>
+              <h2>London</h2>
+              <div class="date"></div>
+            </div>
+            <div class="time"></div>
           </div>
-          <div class="time"></div>
         </div>
       </div>
     </div>
-
     <footer>
       <div class="signature">
         This project was coded by
