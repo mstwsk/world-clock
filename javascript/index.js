@@ -18,4 +18,4 @@ function updateTime() {
 }
 
 updateTime();
-setInterval(updateLosAngelesTime, 1000);
+setInterval(updateTime, 1000);
