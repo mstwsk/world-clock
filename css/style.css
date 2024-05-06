@@ -90,6 +90,11 @@ hr {
   border-width: 1px;
 }
 
+a {
+  color: #001523;
+  font-weight: bold;
+  font-family: monospace;
+}
 footer {
   margin: 20px 0;
   font-family: Arial, Helvetica, sans-serif;
