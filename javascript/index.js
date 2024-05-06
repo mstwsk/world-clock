@@ -24,10 +24,14 @@ function updateTime() {
 
 function updateCity(event) {
   let cityTimeZone = event.target.value;
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+  }
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#data-cities");
-  citiesElement.innerHTML = `<div class="city" id="${cityName}">
+  citiesElement.innerHTML = `
+          <hr /><div class="city" id="${cityName}">
             <div>
               <h2>${cityName}</h2>
               <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
@@ -35,9 +39,9 @@ function updateCity(event) {
             <div class="time">${cityTime.format(
               "h:mm:ss [<small>]A[</small>]"
             )}</div>
-          </div>`;
+          </div>
+          <hr />`;
 }
-setInterval(updateCity, 1000);
 updateTime();
 setInterval(updateTime, 1000);
 
